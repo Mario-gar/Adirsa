@@ -1,207 +1,428 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adirsa</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="https://kit.fontawesome.com/a5c381acf1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADIRSA | Construcción y Proyectos en Nicaragua</title>
+  <meta
+    name="description"
+    content="ADIRSA es una empresa constructora en Nicaragua especializada en obras civiles, remodelaciones, estructuras metálicas e instalaciones complementarias."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="contenedor">
-    <header>
-      <div class="alt">
-        <div class="menu-en-alto">
-            <div class="numero">
-                <h5> <img src="img/telefono.png" width="17"> +505 8953-9128</h5>
-            </div>
-            <div class="correo">
-                <h5> <img src="img/correo.png" width="17"> gerencia@adirsa.net</h5>
-            </div>
-            <div class="logo">
-               <a href=""><img src="img/logo adirsa.jpg"></a>
-            </div>
+  <!-- HEADER -->
+  <header class="header" id="inicio">
+    <div class="topbar">
+      <div class="container topbar-content">
+        <div class="topbar-info">
+          <a href="tel:+50522249553"><i class="fa-solid fa-phone"></i> (505) 2224-9553</a>
+          <a href="mailto:gerencia@adirsa.net"><i class="fa-solid fa-envelope"></i> gerencia@adirsa.net</a>
         </div>
-        <div class="menu-del-medio">
-                <a href="index.html">Inicio</a>
-                <a href="Tecnologia.html">Tecnología</a>
-                <a href="industria.html">Industria</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="#contactenos">Contáctenos</a>
-        </div>
+        <a class="topbar-cta" href="#contacto">Solicitar cotización</a>
       </div>
-    </header>
-    <main>
-      <section class="carrusel">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/paneles carrusel.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/construccion1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/luces carrusel.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
-    <div class="galeria-productos">
-      <div class="galeria-img">
-         <img src="img/tabla 1.png" alt="">
-          <div class="extra-galeria">
-           <a href="Tecnologia.html"><h3>Tecnología</h3></a>
-            <div class="bajo">
-            <p>Comercialización de productos Led</p>
-            <div class="a-2">
-            <a href="Tecnologia.html">Ver mas</a>
-          </div>
-          </div>
-          </div>
-      </div>
-      <div class="galeria-img">
-        <img src="img/industra.jpg" alt="">
-        <div class="extra-galeria">
-         <a href="industria.html"><h3>Industria</h3></a>
-          <div class="bajo">
-          <p>Productos de Higiene y Seguridad Ocupacional</p>
-          <div class="a-2">
-          <a href="industria.html">Ver mas</a>
-        </div>
-        </div>
-        </div>
     </div>
-    <div class="galeria-img">
-      <img src="img/opcion de tabla.jpeg" alt="">
-      <div class="extra-galeria">
-        <a href="servicios.html"><h3>Servicios</h3></a>
-        <div class="bajo">
-        <p>Diseño, Supervisión, Remodelación y Construcción de Obras Verticales y Horizontales</p>
-        <div class="a-2">
-        <a href="servicios.html">Ver mas</a>
+
+    <div class="navbar">
+      <div class="container navbar-content">
+        <a href="#inicio" class="logo">
+          <img src="img/logo.png" alt="Logo ADIRSA" />
+          <div class="logo-text">
+            <span>ADIRSA</span>
+            <small>Construcción y Proyectos</small>
+          </div>
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content reveal">
+      <div class="hero-text">
+        <span class="hero-badge">Empresa constructora en Nicaragua</span>
+        <h1>Construimos proyectos con calidad, experiencia y compromiso</h1>
+        <p>
+          En ADIRSA desarrollamos obras civiles, remodelaciones, estructuras e
+          instalaciones complementarias con ejecución profesional, cumplimiento y
+          atención personalizada.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-secondary">Solicitar cotización</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div>
+            <strong>+30</strong>
+            <span>Proyectos ejecutados</span>
+          </div>
+          <div>
+            <strong>2014</strong>
+            <span>Desde</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Enfoque en construcción</span>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-images reveal">
+        <div class="about-image large">
+          <img src="img/proyecto-1.jpg" alt="Proyecto de construcción ADIRSA" />
+        </div>
+        <div class="about-image small">
+          <img src="img/proyecto-2.jpg" alt="Obra ejecutada por ADIRSA" />
+        </div>
       </div>
+
+      <div class="about-text reveal">
+        <span class="section-tag">Sobre nosotros</span>
+        <h2>Construcción profesional con respaldo técnico</h2>
+        <p>
+          ADIRSA es una empresa nicaragüense dedicada al desarrollo de proyectos
+          constructivos, supervisión de obras, remodelaciones y soluciones civiles.
+          Contamos con personal técnico y operativo comprometido con entregar
+          resultados de calidad en cada proyecto.
+        </p>
+        <p>
+          Nuestro enfoque combina experiencia en campo, planificación, cumplimiento
+          y atención cercana para responder a las necesidades de clientes
+          residenciales, comerciales e industriales.
+        </p>
+
+        <div class="about-features">
+          <div class="feature-item">
+            <i class="fa-solid fa-helmet-safety"></i>
+            <div>
+              <h4>Equipo calificado</h4>
+              <p>Ingenieros, técnicos y personal con experiencia en ejecución de obra.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <i class="fa-solid fa-compass-drafting"></i>
+            <div>
+              <h4>Planificación y control</h4>
+              <p>Seguimiento ordenado en cada etapa del proyecto.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <i class="fa-solid fa-building-circle-check"></i>
+            <div>
+              <h4>Calidad y cumplimiento</h4>
+              <p>Compromiso con tiempos, seguridad y resultados confiables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services section" id="servicios">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <span class="section-tag">Servicios</span>
+        <h2>Soluciones constructivas para distintos tipos de proyecto</h2>
+        <p>
+          Desarrollamos obras con enfoque técnico, calidad de ejecución y atención
+          a cada detalle del proyecto.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>Construcción de obras</h3>
+          <p>
+            Ejecución de proyectos residenciales, comerciales e institucionales
+            con planificación, control y calidad constructiva.
+          </p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Remodelaciones</h3>
+          <p>
+            Mejoramiento de espacios existentes, adecuaciones, ampliaciones y
+            renovación de infraestructura.
+          </p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-road"></i></div>
+          <h3>Obras civiles</h3>
+          <p>
+            Muros, drenajes, canales, pisos, adoquinados, cerramientos y demás
+            soluciones complementarias de obra.
+          </p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Instalaciones complementarias</h3>
+          <p>
+            Trabajos de soporte técnico e instalaciones vinculadas a la operación
+            y funcionalidad del proyecto.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="projects section" id="proyectos">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="section-tag">Proyectos destacados</span>
+        <h2>Experiencia real en campo</h2>
+        <p>
+          Estos son algunos de los proyectos que reflejan nuestra capacidad de
+          ejecución, adaptación y calidad constructiva.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="img/nantli.jpg" alt="Construcción Restaurante Nantli Nindiri" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Construcción</span>
+            <h3>Restaurante Nantli Nindiri</h3>
+            <p>
+              Desarrollo y ejecución del proyecto con enfoque funcional, estético
+              y de calidad en acabados.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="img/iglesia.jpg" alt="Proyecto Iglesia Diriamba" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Estructura</span>
+            <h3>Iglesia Diriamba</h3>
+            <p>
+              Proyecto de transformación estructural con evidencia clara del antes
+              y después de la obra.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="img/enel.jpg" alt="Proyecto ENEL Planta Carlos Fonseca" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Obra civil</span>
+            <h3>ENEL Planta Carlos Fonseca</h3>
+            <p>
+              Ejecución de muros, drenajes, cauces, edificaciones y obras
+              complementarias dentro del complejo.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="img/cervecera.jpg" alt="Proyecto Cervecera de Nicaragua" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Industrial</span>
+            <h3>Compañía Cervecera de Nicaragua</h3>
+            <p>
+              Trabajos de mantenimiento, estructuras metálicas y montaje técnico
+              para infraestructura industrial.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICAS -->
+  <section class="stats section">
+    <div class="container stats-grid">
+      <div class="stat-box reveal">
+        <h3>+30</h3>
+        <p>Proyectos ejecutados</p>
+      </div>
+      <div class="stat-box reveal">
+        <h3>+10</h3>
+        <p>Años de experiencia</p>
+      </div>
+      <div class="stat-box reveal">
+        <h3>Calidad</h3>
+        <p>Compromiso en cada etapa</p>
+      </div>
+      <div class="stat-box reveal">
+        <h3>Respaldo</h3>
+        <p>Equipo técnico y operativo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE ELEGIRNOS -->
+  <section class="why-us section">
+    <div class="container why-grid">
+      <div class="why-text reveal">
+        <span class="section-tag">¿Por qué ADIRSA?</span>
+        <h2>Trabajamos con responsabilidad, orden y visión de largo plazo</h2>
+        <p>
+          Nos enfocamos en entregar proyectos que generen confianza, valor y
+          resultados sostenibles. Nuestra prioridad es responder con seriedad a
+          los objetivos de cada cliente.
+        </p>
+
+        <ul class="why-list">
+          <li><i class="fa-solid fa-check"></i> Atención personalizada</li>
+          <li><i class="fa-solid fa-check"></i> Cumplimiento en ejecución</li>
+          <li><i class="fa-solid fa-check"></i> Enfoque en calidad</li>
+          <li><i class="fa-solid fa-check"></i> Experiencia en distintos tipos de obra</li>
+        </ul>
+      </div>
+
+      <div class="why-card reveal">
+        <h3>Nuestros valores</h3>
+        <div class="values-grid">
+          <div class="value-item">Compromiso</div>
+          <div class="value-item">Responsabilidad</div>
+          <div class="value-item">Honestidad</div>
+          <div class="value-item">Trabajo en equipo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact section" id="contacto">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="section-tag">Contacto</span>
+        <h2>Hablemos de tu próximo proyecto</h2>
+        <p>
+          Estamos listos para conocer tus necesidades y ayudarte a desarrollar
+          una solución constructiva profesional.
+        </p>
+
+        <div class="contact-list">
+          <a href="tel:+50522249553">
+            <i class="fa-solid fa-phone"></i>
+            <span>(505) 2224-9553</span>
+          </a>
+          <a href="tel:+50589539128">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>(505) 8953-9128</span>
+          </a>
+          <a href="mailto:gerencia@adirsa.net">
+            <i class="fa-solid fa-envelope"></i>
+            <span>gerencia@adirsa.net</span>
+          </a>
+          <div class="contact-address">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Km 10.3 carretera vieja a León, 150 mts norte</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" action="send.php" method="post" id="contactForm">
+          <div class="form-group">
+           <input type="text" name="nombre" placeholder="Nombre completo" required />
+         </div>
+         <div class="form-group">
+      <input type="email" name="correo" placeholder="Correo electrónico" required />
   </div>
+  <div class="form-group">
+    <input type="text" name="telefono" placeholder="Teléfono" />
+  </div>
+  <div class="form-group">
+    <textarea
+      name="mensaje"
+      rows="5"
+      placeholder="Cuéntanos sobre tu proyecto"
+      required
+    ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary full">Enviar solicitud</button>
+  <p class="form-status" id="formStatus"></p>
+</form>
+      </div>
     </div>
-    <div class="contenedor-quienes-somos"> 
-      <div class="titulo">
-        <h1>¿Quienes somos?</h1>
-    </div>
-    <div class="text">
-    <div class="img-img">
-      <img src="img/Quienes somos.jpg" alt="">
-      <div class="texto-quienes">
-        <h4> ADIR S.A fue fundada en el año 2014, con el objetivo de Importar y Distribuir productos Led de excelente calidad y precio, además de brindar el servicio de  construcción de obras verticales e instalaciones  eléctricas primarias y de media tensión.
-          <li>Nos especializamos en realizar estudios foto lumínicos y análisis de retorno de la inversión en cambios de iluminación convencional Vs LED.</li>
-          <li>Contamos con un excelente equipos para la Supervisión Externa, en cuanto a Remodelación, construcción y cambios de imagen en general.</li>
-        </h4>
+  </section>
 
-      </div>
-    </div>
-    </div>
-    <div class="paquetes">
-      <div class="combos-paquetes">
-
-          <h4>Misión</h4>
-          <p>Incrementar el poder adquisitivo de nuestros clientes por medio de la adquisición de  marcas y servicios accesibles con excelente precio y garantía.</p>
-      </div>
-      <div class="combos-paquetes">
-    
-        <h4>Nuestro valores</h4>
-          <li>Compromiso</li>
-          <li>Honestidad</li>
-          <li>Responsabilidad</li>
-          <li>Trabajo en equipo</li>
-    </div>
-      <div class="combos-paquetes">
-    
-          <h4>Visión</h4>
-          <p>Ser una empresa reconocida a nivel Nacional por la calidad de sus productos y servicios.</p>
-      </div>
-    </div>
-    </main>
-    <footer>    
-      <div class="contactar">
-       <h1 id="contactenos">Comuniquese Con Nosotros</h1>
-       <div class="ccont">
-        <h4>Telefono</h4>
-        <li>+505 8953-9128</li>
-        <li>+505 2224-9553</li>
-        <h4>Correo</h4>
-        <li>gerencia@adirsa.net</li>
-        <div class="img-footer">
-          <img src="img/contact 2.0.svg" alt="">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Logo ADIRSA" />
+        <div>
+          <h3>ADIRSA</h3>
+          <p>Construcción y Proyectos en Nicaragua</p>
         </div>
       </div>
- 
-    </div>
-    <section class="formulario">
-      <div class="contact">
-        <h3>Escríbenos</h3>
+
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
       </div>
-      <form enctype="text/plain" action="mailto:gerencia@adirsa.net" method="POST">
-          <div class="form-group row">
-              <div class="col-12 col-md-6 mb-3">
-                  <label class="name">Nombre</label>
-                  <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
-              </div>
-              <div class="col-12 col-md-6 mb-3">
-                  <label for="pass" class="name">Correo Electronico</label>
-                  <input type="email" class="form-control" placeholder="Correo electronico" name="Correo Electronico" id="email">
-              </div>
-          </div>
-          <div class="form-group row">
-              <div class="col-12 col-md-6 mg-3">
-                  <label for="Mensaje" class="name">Mensaje</label>
-                  <textarea name="Mensaje" id="Mensaje" class="form-control" placeholder="Mensaje"></textarea>
-              </div>             
-          <div class="col-12 col-md-3 mb-3">
-          <label for="interesado" class="name">Interesado en<label>
-              <select name="sleccion" id="seleccion" class="form-control">
-                  <option value="Tecnología">Tecnologia</option>
-                  <option value="Servicios">Servicios</option>
-                  <option value="Industria">Industria</option>                            
-              </select>
-            </div>
-       </div>
-       <div class="form-group row">
-           <div class="col-12 text-center">
-               <div class="row justify-content-center">
-                   <div class="col-12 col-sm-9 col-md-4">
-                    <button class="btn btn-dark" type="submit">Enviar</button>
-                   </div>                            
-               </div>
-           </div>
-       </div>
-      </form>
-</section>
-    </footer>
     </div>
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 ADIRSA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a
+    href="https://wa.me/50589539128?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20con%20ADIRSA"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
