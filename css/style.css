@@ -895,3 +895,17 @@ ul {
     text-align: center;
   }
 }
+
+.form-status {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-status.success {
+  color: #1f8b4c;
+}
+
+.form-status.error {
+  color: #d93025;
+}

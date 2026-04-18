@@ -111,3 +111,29 @@ function initReveal() {
 
   elements.forEach(el => observer.observe(el));
 }
+
+function initFormStatus() {
+  const status = new URLSearchParams(window.location.search).get("status");
+  const formStatus = document.getElementById("formStatus");
+
+  if (!formStatus) return;
+
+  if (status === "success") {
+    formStatus.textContent = "Tu mensaje fue enviado correctamente.";
+    formStatus.classList.add("success");
+  } else if (status === "error") {
+    formStatus.textContent = "Hubo un problema al enviar el mensaje.";
+    formStatus.classList.add("error");
+  } else if (status === "invalid_email") {
+    formStatus.textContent = "El correo ingresado no es válido.";
+    formStatus.classList.add("error");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initMenu();
+  initSmoothScroll();
+  initActiveNav();
+  initReveal();
+  initFormStatus();
+});
