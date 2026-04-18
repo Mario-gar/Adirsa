@@ -120,13 +120,19 @@ function initFormStatus() {
 
   if (status === "success") {
     formStatus.textContent = "Tu mensaje fue enviado correctamente.";
-    formStatus.classList.add("success");
+    formStatus.className = "form-status success";
   } else if (status === "error") {
     formStatus.textContent = "Hubo un problema al enviar el mensaje.";
-    formStatus.classList.add("error");
+    formStatus.className = "form-status error";
   } else if (status === "invalid_email") {
     formStatus.textContent = "El correo ingresado no es válido.";
-    formStatus.classList.add("error");
+    formStatus.className = "form-status error";
+  } else {
+    formStatus.textContent = "";
+  }
+
+  if (status) {
+    window.history.replaceState({}, document.title, window.location.pathname);
   }
 }
 
